@@ -1,0 +1,255 @@
+:root {
+    --primary: #131d29;
+    --secondary: #36567c;
+    --buttons: #ff8901;
+    --button: #213349;
+    --header-text: #2f3945;
+    --buttonInactive: #c5cfdb;
+    --date1: #be8343;
+    --date2: #bd6142;
+    --date3: #bd425e;
+    --footerGradient: radial-gradient(circle at 50% -50%, rgba(53,85,123,1) 0%, rgba(20,32,46,1) 50%, rgba(14,23,32,1) 100%);
+    --footer: #0b1016;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f1f2;
+}
+
+.active {
+    background-color: var(--buttons) !important;
+}
+
+.more-button {
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--button);
+    padding: 10px 16px;
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.inner {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.top-header {
+    background-color: var(--primary);
+    padding: 8px 0;
+}
+
+.top-header li {
+    border-left: solid var(--secondary) 1px;
+}
+
+.top-header li:first-child {
+    border-left: none;
+}
+
+.top-header a {
+    color: var(--header-text);
+    text-decoration: none;
+    float: left;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 0 4px;
+}
+
+.top-header ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+.top-header li {
+    display: inline-block;
+}
+
+.bottom-header img {
+    float: left;
+    width: 240px;
+    height: 80px;
+    margin: 20px 0;
+}
+
+.top-nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.top-nav li {
+    display: inline-block;
+}
+
+.top-nav a {
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: var(--primary);
+    text-transform: uppercase;
+}
+
+.hero-section img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.hero-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.hero-section ul a {
+    padding: 2px 14px;
+    border-radius: 50%;
+
+    background-color: var(--buttonInactive);
+}
+
+.hero-section li {
+    display: inline-block;
+}
+
+.section1 div {
+    margin: 30px 0;
+    border: solid var(--buttonInactive) 1px;
+    border-bottom: none;
+    padding: 10px 10px;
+    width: calc(100% / 3);
+    float: left;
+}
+
+.section1 div:first-child {
+    border-left: none;
+}
+
+.section1 div:last-child {
+    border-right: none;
+}
+
+.section1 h2 {
+    text-transform: uppercase;
+    font-size: 44px;
+    color: #17222f;
+}
+
+.footer {
+    background: rgb(53,85,123);
+    background: var(--footerGradient);
+    background-position: top;
+}
+
+.footer .footer-section {
+    width: calc(100% / 3);
+    color: white;
+    float: left;
+    padding-right: 20px;
+}
+
+.footer .footer-section:last-child {
+    padding-right: 0;
+}
+
+.footer .inner h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.services ul {
+    list-style-image: url('../media/cog.png');
+    padding: 0;
+    padding-left: 18px;
+}
+
+.services li {
+    padding-left: 10px;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.opportunities ul {
+    list-style-image: url('../media/chat.png');
+    padding-left: 18px;
+}
+
+.opportunities h3 {
+    margin: 0;
+    font-weight: 200;
+}
+
+.opportunities p {
+    margin: 0;
+    font-weight: 200;
+    color: #44596e;
+}
+
+.news ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news li:nth-child(1) .date-wrapper {
+    background-color: var(--date1);
+}
+.news li:nth-child(2) .date-wrapper {
+    background-color: var(--date2);
+}
+.news li:nth-child(3) .date-wrapper {
+    background-color: var(--date3);
+}
+
+.date-wrapper {
+    padding: 0 20px;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+.news h3 {
+    margin: 0;
+}
+
+.date-wrapper h3 {
+    font-size: 30px;
+}
+
+.news-content, .news-content h3 {
+    float: right;
+    width: 250px;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.news-content p {
+    color: #44596e;
+}
+
+.bottom-footer {
+    background-color: var(--footer);
+    color: #44596e;
+    text-transform: uppercase;
+    padding: 4px 0 40px 0;
+    font-size: 10px;
+}
